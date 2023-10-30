@@ -4,12 +4,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>main_page</title>
 </head>
 <body>
 <div class="header_buttons">
@@ -20,7 +19,7 @@
 <img class="union" src="main_page_images/Union.svg">
 <div class="title_after_header">
     <img src="main_page_images/im_inner_circle.svg">
-    <div class="text_title_after_header">Unleash Your Digital Dreams</div>
+    <div class="text_title_after_header">Unleash Your Digital<br> Dreams</div>
     <a class="button_in_github">Explore My Work</a>
 </div>
 <div class="about_me">
@@ -32,13 +31,69 @@
 <div class="block_cards">
     <div class="title_block_cards">Why Choose Me?</div>
     <div class="all_cards">
-        <div class="card_telegram_bots">
-            <div class="background_image_telegram_bots">
+        <div class="cards_template">
+            <div class="background_images_cards">
                 <img class="telegram_image" src="main_page_images/telegram_image.svg">
             </div>
-            <div class="title_telegram">Telegram bots</div>
+            <div class="title_crads">Telegram bots</div>
+            <div class="text_cards">A modern-day Dr. Frankenstein, giving life to bots that serve and entertain.</div>
+            <a class="button_telegram">More</a>
+        </div>
+        <div class="cards_template">
+            <div class="background_images_cards">
+                <img class="telegram_image" src="main_page_images/image_design.svg">
+            </div>
+            <div class="title_crads">Design</div>
+            <div class="text_cards">Balancing form and function, ensuring an exquisite experience for every user.</div>
+            <a class="button_design">More</a>
+        </div>
+        <div class="cards_template">
+            <div class="background_images_cards">
+                <img class="telegram_image" src="main_page_images/image_webdesign.svg">
+            </div>
+            <div class="title_crads">Web-design</div>
+            <div class="text_cards">Creating eye-catching websites that capture minds and excite your imagination.</div>
+            <a class="button_web_design">More</a>
         </div>
     </div>
 </div>
+<div class="block_contact_me">
+    <div class="title_contact_me">Stay Connected</div>
+    <div class="text_contact_me">Follow me on your favorite platforms for the latest updates, digital escapades, and an inside look at what keeps me ticking.</div>
+</div>
+<div class="block_buttons_hrefs">
+    <div class="background_circle_telegram">
+        <img class="telegram_logo" src="main_page_images/telegram_logo.svg">
+    </div>
+    <div class="background_circle_vk">
+        <img class="vk_logo" src="main_page_images/vk_logo.svg">
+    </div>
+    <div class="background_circle_discord">
+        <img class="discord_logo" src="main_page_images/discord_logo.svg">
+    </div>
+    <a class="contact_me_button">Contact me</a>
+</div>
+<img class="blend_group" src="main_page_images/Blend%20Group%201.svg">
 </body>
+<script>
+    document.querySelectorAll('.header_buttons').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1); // Получить целевой элемент по атрибуту href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' }); // Прокрутка с плавным скроллингом
+            }
+        });
+    });
+
+    function handleScroll() {
+        const scrollTop = window.scrollY;
+        const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        const translateValue = 100 - scrollPercent;
+        document.querySelector('.union_2').style.transform = `translateX(${translateValue}%)`;
+    }
+    window.addEventListener('scroll', handleScroll);
+</script>
 </html>

@@ -1,6 +1,12 @@
+html {
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: 'Orelega One', serif;
     background-color: #FFC971;
+    padding: 0;
+    margin: 0;
 }
 .header_buttons {
     text-align: center;
@@ -18,8 +24,20 @@ body {
 }
 .text_title_after_header {
     font-size: 72px;
-    padding: 3% 10% 4% 0;
+    padding: 3% 15% 4% 0;
+    opacity: 0;
+    white-space: nowrap;
+    animation: fadeInText 3s ease forwards; /* Применяем анимацию с продолжительностью 2 секунды */
 }
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .button_in_github {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
@@ -33,6 +51,8 @@ body {
 }
 .union_2 {
     float: right;
+    transform: translateX(100%); /* Начальное положение справа за пределами экрана */
+    transition: transform 0.2s; /* Время анимации */
 }
 #title_about_me {
     font-size: 48px;
@@ -71,25 +91,148 @@ body {
 }
 .all_cards {
     margin-top: 15%;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 15%;
 }
-.card_telegram_bots {
+.cards_template {
     height: 380px;
     width: 300px;
     background-color: white;
     border-radius: 20px;
+    margin-right: 5%;
 }
-.background_image_telegram_bots {
+.cards_template:hover .telegram_image {
+    transform: translateY(-25%);
+}
+.background_images_cards {
     background-color: #C37740;
     width: 300px;
     height: 180px;
     border-radius: 20px 20px 0 0;
 }
-.telegram_image {S
+.telegram_image {
     transition: 0.4s;
 }
-.card_telegram_bots:hover .telegram_image {
-    transform: translateY(-25%);
+.title_crads {
+    font-size: 24px;
+    padding: 4% 0;
 }
-.title_telegram {
-
+.text_cards {
+    padding: 0 6% 12% 6%;
+}
+.button_telegram {
+    color: black;
+    background-color: white;
+    border: 3px solid #C37740;
+    border-radius: 10px;
+    padding: 1% 8%;
+    transition: 0.2s;
+}
+.button_telegram:hover {
+    background-color: #C37740;
+    font-size: 19px;
+}
+.button_design {
+    color: black;
+    background-color: white;
+    border: 3px solid #C37740;
+    border-radius: 10px;
+    padding: 1% 8%;
+    transition: 0.2s;
+}
+.button_design:hover {
+    background-color: #C37740;
+    font-size: 19px;
+}
+.button_web_design {
+    color: black;
+    background-color: white;
+    border: 3px solid #C37740;
+    border-radius: 10px;
+    padding: 1% 8%;
+    transition: 0.2s;
+}
+.button_web_design:hover {
+    background-color: #C37740;
+    font-size: 19px;
+}
+.block_contact_me {
+    padding: 0 16%;
+}
+.title_contact_me {
+    font-size: 48px;
+}
+.text_contact_me {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    padding: 5% 53% 5% 0;
+}
+.block_buttons_hrefs {
+    padding: 1% 16% 0 16%;
+    display: flex;
+}
+.background_circle_telegram {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    transition: 0.4s;
+}
+.background_circle_telegram:hover {
+    background-color: #00A3FF;
+}
+.background_circle_vk {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    transition: 0.4s;
+}
+.background_circle_vk:hover {
+    background-color: #000AFF;
+}
+.background_circle_discord {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    transition: 0.4s;
+}
+.background_circle_discord:hover {
+    background-color: #7B00F6;
+}
+.telegram_logo {
+    margin: 28% 0 0 21%;
+}
+.vk_logo {
+    margin: 33% 0 0 22%;
+}
+.discord_logo {
+    margin: 28% 0 0 19%;
+}
+.contact_me_button {
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin: 0.6% 5% 1% 5%;
+    transition: 0.4s;
+}
+.contact_me_button:hover {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin: 0.5% 5% 0.9% 5%;
+}
+.blend_group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
