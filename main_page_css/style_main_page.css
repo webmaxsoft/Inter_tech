@@ -1,0 +1,71 @@
+body {
+    font-family: 'Orelega One', serif;
+    background-color: #FFC971;
+}
+.header_buttons {
+    text-align: center;
+    margin-top: 2%;
+}
+.header_button {
+    margin: 5% 10% 0 10%;
+    font-size: 22px;
+}
+.union {
+    margin: 5% 0 0 48%;
+}
+.title_after_header {
+    padding: 0 17%;
+}
+.text_title_after_header {
+    font-size: 72px;
+    padding: 3% 10% 4% 0;
+}
+.button_in_github {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    padding: 1.2% 2.2%;
+    border-radius: 12px;
+
+}
+.about_me {
+    padding: 14% 20% 0 20%;
+}
+.union_2 {
+    float: right;
+}
+#title_about_me {
+    font-size: 48px;
+    line-height: 2;
+    font-family: 'Orelega One', serif;
+    font-weight: normal;
+}
+.text_about_me_1 {
+    padding-right: 32%;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 6%;
+}
+.text_about_me_2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    padding-right: 32%;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-bottom: 6%;
+}
+.text_about_me_3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.block_cards {
+    padding: 15% 17% 0 17%;
+    text-align: center;
+}
+.title_block_cards {
+    font-size: 48px;
+}
