@@ -15,6 +15,8 @@ body {
 .header_button {
     margin: 5% 10% 0 10%;
     font-size: 22px;
+    color: black;
+    text-decoration: none;
 }
 .union {
     margin: 5% 0 0 48%;
@@ -27,7 +29,7 @@ body {
     padding: 3% 15% 4% 0;
     opacity: 0;
     white-space: nowrap;
-    animation: fadeInText 3s ease forwards; /* Применяем анимацию с продолжительностью 2 секунды */
+    animation: fadeInText 3s ease forwards;
 }
 @keyframes fadeInText {
     from {
@@ -44,10 +46,14 @@ body {
     background-color: white;
     padding: 1.2% 2.2%;
     border-radius: 12px;
-
+    color: black;
+    text-decoration: none;
+}
+#first_anchor_link {
+    padding: 4% 0;
 }
 .about_me {
-    padding: 14% 20% 0 20%;
+    padding: 6% 20% 0 20%;
 }
 .union_2 {
     float: right;
@@ -83,8 +89,11 @@ body {
     line-height: 1.4;
 }
 .block_cards {
-    padding: 15% 17% 0 17%;
+    padding: 11% 17% 0 17%;
     text-align: center;
+}
+#second_anchor_link {
+    padding: 2% 0;
 }
 .title_block_cards {
     font-size: 48px;
@@ -102,6 +111,7 @@ body {
     background-color: white;
     border-radius: 20px;
     margin-right: 5%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.27);
 }
 .cards_template:hover .telegram_image {
     transform: translateY(-25%);
@@ -167,7 +177,8 @@ body {
 .text_contact_me {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    padding: 5% 53% 5% 0;
+    padding: 5% 48% 5% 0;
+    letter-spacing: 1px;
 }
 .block_buttons_hrefs {
     padding: 1% 16% 0 16%;
@@ -178,7 +189,7 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-right: 2%;
+    margin-right: 5%;
     transition: 0.4s;
 }
 .background_circle_telegram:hover {
@@ -189,7 +200,7 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-right: 2%;
+    margin-right: 5%;
     transition: 0.4s;
 }
 .background_circle_vk:hover {

@@ -12,23 +12,25 @@
 </head>
 <body>
 <div class="header_buttons">
-    <a class="header_button">Portfolio</a>
-    <a class="header_button">Services</a>
-    <a class="header_button">Contacts</a>
+    <a class="header_button" href="#first_anchor_link">Portfolio</a>
+    <a class="header_button" href="#second_anchor_link">Services</a>
+    <a class="header_button" href="#third_anchor_link">Contacts</a>
 </div>
 <img class="union" src="main_page_images/Union.svg">
 <div class="title_after_header">
     <img src="main_page_images/im_inner_circle.svg">
     <div class="text_title_after_header">Unleash Your Digital<br> Dreams</div>
-    <a class="button_in_github">Explore My Work</a>
+    <a class="button_in_github" href="https://github.com/webmaxsoft/Inter_tech">Explore My Work</a>
 </div>
 <div class="about_me">
+    <div id="first_anchor_link"></div>
     <img class="union_2" src="main_page_images/Union_2.svg">
     <div class="text_about_me_1"><span id="title_about_me">Who Am I?</span><br><br>Hello, world! I’m a daring digital freelancer crafting unforgettable web experiences for all to enjoy. My specialty? Everything from web design and Тelegram bots to entire websites that’ll knock your socks off!</div>
     <div class="text_about_me_2">Whether you need a stunning portfolio site to show off your jaw-dropping skills, or a complex web project to streamline your business operations, I’ve got you covered. My passion for design and coding knows no bounds.</div>
     <div class="text_about_me_3">Ready? Let’s dive into the majestic realm of my digital portfolio and awaken your inner techie.</div>
 </div>
 <div class="block_cards">
+    <div id="second_anchor_link"></div>
     <div class="title_block_cards">Why Choose Me?</div>
     <div class="all_cards">
         <div class="cards_template">
@@ -57,18 +59,18 @@
         </div>
     </div>
 </div>
-<div class="block_contact_me">
+<div class="block_contact_me" id="third_anchor_link">
     <div class="title_contact_me">Stay Connected</div>
     <div class="text_contact_me">Follow me on your favorite platforms for the latest updates, digital escapades, and an inside look at what keeps me ticking.</div>
 </div>
 <div class="block_buttons_hrefs">
-    <div class="background_circle_telegram">
+    <div class="background_circle_telegram" onclick="redirect('https://t.me/W7R7R7U7S')">
         <img class="telegram_logo" src="main_page_images/telegram_logo.svg">
     </div>
-    <div class="background_circle_vk">
+    <div class="background_circle_vk" onclick="redirect('https://vk.com/id240081689')">
         <img class="vk_logo" src="main_page_images/vk_logo.svg">
     </div>
-    <div class="background_circle_discord">
+    <div class="background_circle_discord" onclick="redirect('https://discord.gg/5tstseR4')">
         <img class="discord_logo" src="main_page_images/discord_logo.svg">
     </div>
     <a class="contact_me_button">Contact me</a>
@@ -76,7 +78,7 @@
 <img class="blend_group" src="main_page_images/Blend%20Group%201.svg">
 </body>
 <script>
-    document.querySelectorAll('.header_buttons').forEach(button => {
+    document.querySelectorAll('.header_button').forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1); // Получить целевой элемент по атрибуту href
@@ -95,5 +97,9 @@
         document.querySelector('.union_2').style.transform = `translateX(${translateValue}%)`;
     }
     window.addEventListener('scroll', handleScroll);
+
+    function redirect(url) {
+        window.location.href = url;
+    }
 </script>
 </html>
