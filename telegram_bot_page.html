@@ -19,9 +19,9 @@
     <img class="header_image" src="telegram_bot_images/header_image.svg">
     <div class="title_header">Telegram bot</div>
     <div class="header_buttons">
-        <a class="header_button">Main</a>
-        <a class="header_button">Examples</a>
-        <a class="header_button">Contacts</a>
+        <a class="header_button" href="main_page.html" id="mainLink">Main</a>
+        <a class="header_button" href="#first_anchor_link">Reviews</a>
+        <a class="header_button" href="#second_anchor_link">Contacts</a>
     </div>
 </div>
 <div class="block_about_bots">
@@ -51,7 +51,7 @@
     <img src="telegram_bot_images/just_image_part_3.svg">
     <img src="telegram_bot_images/just_image_part_4.svg">
 </div>
-<div class="reviews_from_people">
+<div class="reviews_from_people" id="first_anchor_link">
     <div class="reviews_card">
         <img class="human_inner_circle" src="telegram_bot_images/human_inner_circle_1.svg">
         <div class="comment">Now even more people are watching my courses. Thank you very much!</div>
@@ -68,7 +68,7 @@
         <div class="name_human_3">Elena Smirnova</div>
     </div>
 </div>
-<div class="bottom">
+<div class="bottom" id="second_anchor_link">
     <div class="title_bottom">Start  now!</div>
     <div class="text_bottom">Don't miss the chance to send your order to create a telegram<br>a bot that will change your life forever!</div>
     <a class="button_contact_me">Order a bot!</a>
@@ -84,5 +84,31 @@
         <img class="discord_logo" src="telegram_bot_images/discord_logo.svg">
     </div>
 </div>
+<script>
+    document.querySelectorAll('.header_button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1); // Получить целевой элемент по атрибуту href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' }); // Прокрутка с плавным скроллингом
+            }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainLink = document.getElementById("mainLink");
+
+        mainLink.addEventListener("click", function(event) {
+            // Отменяем стандартное действие ссылки, чтобы не произошел переход до выполнения JavaScript
+            event.preventDefault();
+
+            // Получаем значение атрибута href и переходим на указанную страницу
+            var href = mainLink.getAttribute("href");
+            window.location.href = href;
+        });
+    });
+</script>
 </body>
 </html>

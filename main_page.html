@@ -39,7 +39,7 @@
             </div>
             <div class="title_crads">Telegram bots</div>
             <div class="text_cards">A modern-day Dr. Frankenstein, giving life to bots that serve and entertain.</div>
-            <a class="button_telegram">More</a>
+            <a class="button_telegram" id="Link" href="telegram_bot_page.html">More</a>
         </div>
         <div class="cards_template">
             <div class="background_images_cards">
@@ -101,5 +101,18 @@
     function redirect(url) {
         window.location.href = url;
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainLink = document.getElementById("Link");
+
+        mainLink.addEventListener("click", function(event) {
+            // Отменяем стандартное действие ссылки, чтобы не произошел переход до выполнения JavaScript
+            event.preventDefault();
+
+            // Получаем значение атрибута href и переходим на указанную страницу
+            var href = mainLink.getAttribute("href");
+            window.location.href = href;
+        });
+    });
 </script>
 </html>
