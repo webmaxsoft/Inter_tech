@@ -85,11 +85,171 @@ body {
 
 .header_button {
     padding: 0 2.5%;
+    color: black;
+    text-decoration: none;
 }
-
-/*#header_button_1 {*/
-/*    padding-right: 5%;*/
-/*}*/
-/*#header_button_2 {*/
-/*    padding-right: 5%;*/
-/*}*/
+.block_about_bots {
+    background-color: #F7FFF7;
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+    padding: 7% 10%;
+}
+.title_about_bots {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+}
+.text_about_bots {
+    color: #1A535C;
+    font-size: 20px;
+    float: right;
+    width: 420px;
+    margin-left: 15%;
+}
+.block_advantages {
+    background-color: #F7FFF7;
+    padding: 7% 18%;
+}
+.cards_advantage {
+    background-color: #DEFFDE;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+.advantages_images {
+    padding: 1%;
+}
+.text_advantages {
+    font-size: 14px;
+    padding: 3.7% 0 0 3%;
+    line-height: 1.5;
+}
+#title_advantage {
+    font-weight: bold;
+    font-size: 20px;
+}
+.arrow {
+    margin-left: 51%;
+}
+.arrow_3 {
+    margin-left: 55.3%;
+}
+.block_image {
+    display: flex;
+    padding: 5% 24%;
+}
+.reviews_from_people {
+    padding: 5% 17%;
+    display: flex;
+}
+.reviews_card {
+    background-color: #DEFFDE;
+    border-radius: 15px;
+    width: 320px;
+    margin-left: 2%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.04);
+}
+.human_inner_circle {
+    padding: 11%;
+}
+.comment {
+    padding: 0 15%;
+    color: #1A535C;
+    font-size: 20px;
+    font-weight: bold;
+}
+.name_human {
+    color: #1A535C;
+    font-size: 14px;
+    padding: 23% 15% 10% 15%;
+}
+.name_human_2 {
+    color: #1A535C;
+    font-size: 14px;
+    padding: 30% 15% 10% 15%;
+}
+.name_human_3 {
+    color: #1A535C;
+    font-size: 14px;
+    padding: 30% 15% 10% 15%;
+}
+.bottom {
+    text-align: center;
+    padding-top: 9%;
+}
+.title_bottom {
+    font-weight: 800;
+    font-size: 48px;
+    color: #1A535C;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 1%;
+}
+.text_bottom {
+    padding-bottom: 3%;
+}
+.button_contact_me {
+    color: black;
+    text-decoration: none;
+    background-color: #FF6B6B;
+    border-radius: 7px;
+    padding: 0.7% 1.2%;
+    font-weight: 800;
+    transition: 0.4s;
+}
+.button_contact_me:hover {
+    background-color: black;
+    color: #FF6B6B;
+}
+.social_circles {
+    display: flex;
+    padding: 3% 0;
+    justify-content: center;
+}
+.background_circle_telegram {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_telegram:hover {
+    background-color: #00A3FF;
+}
+.background_circle_vk {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_vk:hover {
+    background-color: #000AFF;
+}
+.background_circle_discord {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_discord:hover {
+    background-color: #7B00F6;
+}
+.telegram_logo {
+    margin-right: 5%;
+}
+.discord_logo {
+    margin-right: 1.5%;
+}
