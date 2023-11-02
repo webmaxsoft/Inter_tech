@@ -74,13 +74,13 @@
     <a class="button_contact_me">Order a bot!</a>
 </div>
 <div class="social_circles">
-    <div class="background_circle_telegram">
+    <div class="background_circle_telegram" onclick="redirect('https://t.me/W7R7R7U7S')">
         <img class="telegram_logo" src="telegram_bot_images/telegram_logo.svg">
     </div>
-    <div class="background_circle_vk">
+    <div class="background_circle_vk" onclick="redirect('https://vk.com/id240081689')">
         <img class="vk_logo" src="telegram_bot_images/vk_logo.svg">
     </div>
-    <div class="background_circle_discord">
+    <div class="background_circle_discord" onclick="redirect('https://discord.gg/5tstseR4')">
         <img class="discord_logo" src="telegram_bot_images/discord_logo.svg">
     </div>
 </div>
@@ -96,6 +96,10 @@
             }
         });
     });
+
+    function redirect(url) {
+        window.location.href = url;
+    }
 
     document.addEventListener("DOMContentLoaded", function() {
         var mainLink = document.getElementById("mainLink");
