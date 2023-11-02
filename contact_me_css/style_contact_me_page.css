@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(#18004c, #04000A);
+    font-family: 'Alef', sans-serif;
+}
+input {outline:none; border: none;}
+.all_inputs {
+    text-align: center;
+    padding: 0 17%;
+}
+.title {
+    color: white;
+    font-size: 36px;
+    padding: 15% 0 4% 0;
+}
+.name {
+    background-color: rgba(176, 176, 176, 0.19);
+    border-radius: 8px;
+    width: 33%;
+    padding: 2% 1.8%;
+    color: #d0d0d0;
+    margin-right: 0.9%;
+}
+.email {
+    background-color: rgba(176, 176, 176, 0.19);
+    border-radius: 8px;
+    width: 33%;
+    color: #d0d0d0;
+    padding: 2% 1.8%;
+    margin-left: 0.9%;
+    margin-bottom: 2.4%;
+}
+
+::placeholder {
+    color: #626262;
+    font-family: 'Alef', sans-serif;
+    font-size: 15px;
+}
+.tel {
+    background-color: rgba(176, 176, 176, 0.19);
+    border-radius: 8px;
+    width: 72%;
+    padding: 2% 1.8%;
+    color: #d0d0d0;
+    margin-bottom: 2.4%;
+}
+.comments {
+    background-color: rgba(176, 176, 176, 0.19);
+    border-radius: 8px;
+    width: 72%;
+    padding: 2% 1.8% 8% 1.8%;
+    color: #d0d0d0;
+    margin-bottom: 2.4%;
+}
+.button_send {
+    background-color: rgba(255, 207, 39, 0.88);
+    width: 75.2%;
+    border-radius: 8px;
+    font-family: 'Alef', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 1.6% 0;
+    border: none;
+    margin-bottom: 13%;
+}

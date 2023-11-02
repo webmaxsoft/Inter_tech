@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>contact_me</title>
+    <link rel="stylesheet" href="contact_me_css/style_contact_me_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="all_inputs">
-  <input type="text" placeholder="Name">
-  <input type="email" placeholder="Email">
-  <input type="tel" placeholder="">
-  <input type="text" placeholder="Comments">
+    <div class="title">Contact me</div>
+    <input class="name" type="text" placeholder="Name">
+    <input class="email" type="email" placeholder="Email">
+    <br>
+    <input class="tel" type="tel" placeholder="Phone number">
+    <br>
+    <input class="comments" type="text" placeholder="Comments">
+    <br>
+    <button class="button_send">Send</button>
 </div>
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        [].forEach.call( document.querySelectorAll('.tel'), function(input) {
+            var keyCode;
+            function mask(event) {
+                event.keyCode && (keyCode = event.keyCode);
+                var pos = this.selectionStart;
+                if (pos < 3) event.preventDefault();
+                var matrix = "+7 (___) ___ ____",
+                    i = 0,
+                    def = matrix.replace(/\D/g, ""),
+                    val = this.value.replace(/\D/g, ""),
+                    new_value = matrix.replace(/[_\d]/g, function(a) {
+                        return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+                    });
+                i = new_value.indexOf("_");
+                if (i != -1) {
+                    i < 5 && (i = 3);
+                    new_value = new_value.slice(0, i)
+                }
+                var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                    function(a) {
+                        return "\\d{1," + a.length + "}"
+                    }).replace(/[+()]/g, "\\$&");
+                reg = new RegExp("^" + reg + "$");
+                if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+                if (event.type == "blur" && this.value.length < 5)  this.value = ""
+            }
+
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            input.addEventListener("keydown", mask, false)
+
+        });
+
+    });
+</script>
 </body>
 </html>
