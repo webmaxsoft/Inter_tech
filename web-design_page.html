@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="web_design_css/style_web_design.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Old+Standard+TT&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>web_design</title>
+</head>
+<body>
+<div class="background_header">
+    <img class="GenGroup" src="web_design_images/GenGroup.svg">
+</div>
+<div class="header">
+    <img class="image_header" src="web_design_images/human_and_circle.svg">
+    <div class="text_header">The Wizard of Web <br>Design</div>
+    <div class="header_buttons">
+        <a class="header_button" id="start_now">Start now</a>
+        <a class="header_button" id="Link" href="main_page.html">Main page</a>
+    </div>
+</div>
+<div class="about_us">
+    <div class="title_about_us">Creativity without <br>borders</div>
+    <div class="all_text">
+        <div class="text_about_us">We know how to create an exciting and high-quality website that will set your business apart from the competition. Advanced technologies and innovative solutions – with us, the transformation of your website into a work of art will become easier than ever.</div>
+        <div class="text_about_us">Functionality and aesthetics are the key components of every website we develop. Don't be afraid of bright ideas and a step into the unknown, because the future is already coming!</div>
+        <div class="text_about_us">From simple web pages to complex online stores, we guarantee stylish design and unique solutions for each project.</div>
+    </div>
+</div>
+<div class="block_just_images">
+    <img class="image_flower" src="web_design_images/image_flower.svg">
+    <img class="image_star" src="web_design_images/image_star.svg">
+</div>
+<div class="text_under_images">
+    <div class="text_under_image_1"><span id="titles_under_image_1">Original design</span><br><br>Impress visitors with your website built on non-standard ideas and great design.</div>
+    <div class="text_under_image_2"><span id="titles_under_image_2">Brightness and infinity</span><br><br>Our projects are beloved and at the same time effective. Make sure of it yourself!</div>
+</div>
+<div class="bottom">
+    <img src="web_design_images/vawe_bottom.svg">
+    <div class="title_bottom">Stay informed</div>
+    <div class="text_bottom">Subscribe to our exclusive newsletter and find out about the most</div>
+    <a class="button_contact_me">Order design</a>
+    <div class="social_circles">
+        <div class="background_circle_telegram" onclick="redirect('https://t.me/W7R7R7U7S')">
+            <img class="telegram_logo" src="telegram_bot_images/telegram_logo.svg">
+        </div>
+        <div class="background_circle_vk" onclick="redirect('https://vk.com/id240081689')">
+            <img class="vk_logo" src="telegram_bot_images/vk_logo.svg">
+        </div>
+        <div class="background_circle_discord" onclick="redirect('https://discord.gg/5tstseR4')">
+            <img class="discord_logo" src="telegram_bot_images/discord_logo.svg">
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.header_button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1); // Получить целевой элемент по атрибуту href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' }); // Прокрутка с плавным скроллингом
+            }
+        });
+    });
+    function redirect(url) {
+        window.location.href = url;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainLink = document.getElementById("Link");
+
+        mainLink.addEventListener("click", function(event) {
+            // Отменяем стандартное действие ссылки, чтобы не произошел переход до выполнения JavaScript
+            event.preventDefault();
+
+            // Получаем значение атрибута href и переходим на указанную страницу
+            var href = mainLink.getAttribute("href");
+            window.location.href = href;
+        });
+    });
+</script>
+</body>
+</html>

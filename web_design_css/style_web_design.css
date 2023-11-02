@@ -1,0 +1,187 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.GenGroup {
+    position: absolute;
+    margin-left: 40%;
+    z-index: -1;
+}
+.header {
+    padding: 12% 17% 0 17%;
+}
+.text_header {
+    font-size: 72px;
+    font-weight: bolder;
+    color: #006466;
+    padding-top: 3%;
+}
+.header_buttons {
+    padding: 3% 0;
+}
+.header_button {
+    padding: 1.4% 2.1%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Old Standard TT', serif;
+    margin-right: 1.5%;
+}
+#start_now {
+    background-color: #272640;
+}
+#Link {
+    background-color: #707070;
+}
+.about_us {
+    padding: 0 17% ;
+    margin-top: 15%;
+    background-color: white;
+}
+.title_about_us {
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 10% 0 1% 0;
+    color: #4D194D;
+}
+.all_text {
+    font-size: 20px;
+    color: #144552;
+    font-family: 'Old Standard TT', serif;
+    padding-bottom: 18%;
+}
+.text_about_us {
+    padding: 3% 35% 0 0;
+}
+.block_just_images {
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    background-color: #1B3A4B;
+}
+.image_flower {
+    margin-right: 1%;
+}
+.image_star {
+    margin-left: 1%;
+}
+.text_under_images {
+    display: flex;
+    text-align: center;
+    background-color: #1B3A4B;
+    padding: 1% 17%;
+    color: white;
+}
+#titles_under_image_1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+#titles_under_image_2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+.text_under_image_1 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    font-weight: normal;
+    width: 300px;
+    margin-left: 10%;
+}
+.text_under_image_2 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 0 0 8%;
+    width: 400px;
+    margin-left: 8%;
+}
+.bottom {
+    text-align: center;
+    padding: 10% 0 2% 0;
+    background-color: #1B3A4B;
+}
+.title_bottom {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 2% 0;
+}
+.text_bottom {
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 3%;
+}
+.button_contact_me {
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    padding: 1% 1.5%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.button_contact_me:hover {
+    background-color: #F7FFF7;
+    font-size: 18px;
+    color: black;
+}
+.social_circles {
+    display: flex;
+    padding: 3% 0;
+    justify-content: center;
+}
+.background_circle_telegram {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_telegram:hover {
+    background-color: #00A3FF;
+}
+.background_circle_vk {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_vk:hover {
+    background-color: #000AFF;
+}
+.background_circle_discord {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_discord:hover {
+    background-color: #7B00F6;
+}
+.telegram_logo {
+    margin-right: 5%;
+}
+.discord_logo {
+    margin-right: 1.5%;
+}
