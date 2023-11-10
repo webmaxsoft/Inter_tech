@@ -12,11 +12,11 @@
 <div class="all_inputs">
     <div class="title">Contact me</div>
     <input class="name" type="text" placeholder="Name">
-    <input class="email" type="email" placeholder="Email">
+    <input class="email" id="contactsForm" type="email" placeholder="Email">
     <br>
     <input class="tel" type="tel" placeholder="Phone number">
     <br>
-    <input class="comments" type="text" placeholder="Comments">
+    <textarea class="comments" placeholder="Comments" cols="70"></textarea>
     <br>
     <button class="button_send">Send</button>
 </div>
@@ -55,7 +55,6 @@
             input.addEventListener("keydown", mask, false)
 
         });
-
     });
 </script>
 </body>

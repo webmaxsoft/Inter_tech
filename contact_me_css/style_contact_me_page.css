@@ -2,7 +2,7 @@ body {
     background: linear-gradient(#18004c, #04000A);
     font-family: 'Alef', sans-serif;
 }
-input {outline:none; border: none;}
+input, textarea {outline:none; border: none;}
 .all_inputs {
     text-align: center;
     padding: 0 17%;
@@ -50,6 +50,7 @@ input {outline:none; border: none;}
     padding: 2% 1.8% 8% 1.8%;
     color: #d0d0d0;
     margin-bottom: 2.4%;
+    resize: none;
 }
 .button_send {
     background-color: rgba(255, 207, 39, 0.88);

@@ -121,6 +121,7 @@ body {
 .button_contact_me {
     font-family: 'Old Standard TT', serif;
     font-size: 16px;
+    text-decoration: none;
     color: white;
     background-color: black;
     padding: 1% 1.5%;

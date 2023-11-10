@@ -147,7 +147,7 @@ body {
     border-radius: 15px;
     width: 320px;
     margin-left: 2%;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.18);
 }
 .human_inner_circle {
     padding: 11%;
