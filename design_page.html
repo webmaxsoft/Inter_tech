@@ -25,7 +25,11 @@
 <div class="block_just_images" id="first_anchor_link">
     <div class="title_just_images">Stunning works</div>
     <div class="all_images">
-        <img src="design_page_images/all_images.svg">
+        <img id="just_image_1" src="design_page_images/just_image_1_1.svg">
+        <div class="right_just_image">
+            <img id="just_image_2" class="fade-in-out" src="design_page_images/just_image_2_1.svg" alt="Just Image">
+            <img id="just_image_3" class="fade-in-out" src="design_page_images/just_image_3_1.svg" alt="Just Image">
+        </div>
     </div>
 </div>
 <div class="reviews_from_people">
@@ -69,6 +73,46 @@
     </div>
 </div>
 <script>
+
+    function changeImage_1() {
+        const image = document.getElementById('just_image_1');
+        const currentSrc = image.getAttribute('src');
+
+        if (currentSrc === 'design_page_images/just_image_1_1.svg') {
+            image.setAttribute('src', 'design_page_images/just_image_1_2.svg');
+        } else {
+            image.setAttribute('src', 'design_page_images/just_image_1_1.svg');
+        }
+    }
+
+    setInterval(changeImage_1, 4000);
+
+    function changeImage_2() {
+        const image = document.getElementById('just_image_2');
+        const currentSrc = image.getAttribute('src');
+
+        if (currentSrc === 'design_page_images/just_image_2_1.svg') {
+            image.setAttribute('src', 'design_page_images/just_image_2_2.svg');
+        } else {
+            image.setAttribute('src', 'design_page_images/just_image_2_1.svg');
+        }
+    }
+
+    setInterval(changeImage_2, 5000);
+
+    function changeImage_3() {
+        const image = document.getElementById('just_image_3');
+        const currentSrc = image.getAttribute('src');
+
+        if (currentSrc === 'design_page_images/just_image_3_1.svg') {
+            image.setAttribute('src', 'design_page_images/just_image_3_2.svg');
+        } else {
+            image.setAttribute('src', 'design_page_images/just_image_3_1.svg');
+        }
+    }
+
+    setInterval(changeImage_3, 6000);
+
     document.addEventListener("DOMContentLoaded", function() {
         var mainLink = document.getElementById("mainLink");
         mainLink.addEventListener("click", function(event) {

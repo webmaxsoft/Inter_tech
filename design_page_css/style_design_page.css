@@ -75,6 +75,57 @@ body {
     font-size: 48px;
     padding-bottom: 4%;
 }
+.all_images {
+    display: flex;
+}
+.right_just_image {
+    display: block;
+}
+#just_image_1 {
+    margin-right: 2.2%;
+    animation: fadeInOut_1 4s infinite;
+}
+@keyframes fadeInOut_1 {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+#just_image_2 {
+    margin-top: 1%;
+    animation: fadeInOut_2 5s infinite;
+}
+@keyframes fadeInOut_2 {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+#just_image_3 {
+    margin-top: 3%;
+    animation: fadeInOut_3 6s infinite;
+}
+@keyframes fadeInOut_3 {
+    0%, 100% {
+        opacity: 0;
+    }
+    15%, 85% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+}
 .reviews_from_people {
     padding: 15% 15%;
     display: flex;
