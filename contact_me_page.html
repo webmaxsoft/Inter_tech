@@ -10,15 +10,25 @@
 </head>
 <body>
 <div class="all_inputs">
-    <div class="title">Contact me</div>
-    <input class="name" type="text" placeholder="Name">
-    <input class="email" id="contactsForm" type="email" placeholder="Email">
-    <br>
-    <input class="tel" type="tel" placeholder="Phone number">
-    <br>
-    <textarea class="comments" placeholder="Comments" cols="70"></textarea>
-    <br>
-    <button class="button_send">Send</button>
+    <form action="https://formspree.io/f/xknlajvj" method="POST">
+        <div class="title">Contact me</div>
+        <label>
+            <input class="name" type="text" id="name" name="name" placeholder="Name">
+        </label>
+        <label>
+            <input class="email" id="email" type="email" name="email" placeholder="Email">
+        </label>
+        <br>
+        <label>
+            <input class="tel" id="phone" type="tel" name="phone_number" placeholder="Phone number">
+        </label>
+        <br>
+        <label>
+            <textarea class="comments" id="comments" name="comments" placeholder="Comments" cols="70"></textarea>
+        </label>
+        <br>
+        <button class="button_send" type="submit">Send</button>
+    </form>
 </div>
 <script>
     window.addEventListener("DOMContentLoaded", function() {
@@ -56,9 +66,6 @@
 
         });
     });
-
-
-
 </script>
 </body>
 </html>
