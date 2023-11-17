@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>design</title>
     <link rel="stylesheet" href="design_page_css/style_design_page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +60,7 @@
 </div>
 <div class="bottom" id="second_anchor_link">
     <div class="text_bottom">Subscribe to the newsletter to <br>receive the latest news and <br>discounts!</div>
-    <a class="button_contact_me" id="mainLink" href="contact_me_page.html">Order design</a>
+    <a class="button_contact_me" id="mainLink_2" href="contact_me_page.html">Order design</a>
 </div>
 <div class="social_circles">
     <div class="background_circle_telegram" onclick="redirect('https://t.me/W7R7R7U7S')">
@@ -115,6 +116,15 @@
 
     document.addEventListener("DOMContentLoaded", function() {
         var mainLink = document.getElementById("mainLink");
+        mainLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            var href = mainLink.getAttribute("href");
+            window.location.href = href;
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainLink = document.getElementById("mainLink_2");
         mainLink.addEventListener("click", function(event) {
             event.preventDefault();
             var href = mainLink.getAttribute("href");

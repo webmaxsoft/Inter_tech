@@ -77,6 +77,7 @@ body {
 }
 .all_images {
     display: flex;
+    justify-content: center;
 }
 .right_just_image {
     display: block;
@@ -213,6 +214,7 @@ body {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     padding: 1% 2%;
+    text-decoration: none;
     border-radius: 5px;
     transition: 0.4s;
 }
@@ -272,4 +274,253 @@ body {
 }
 .discord_logo {
     margin-right: 1.5%;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1010px){
+    .rocket_image {
+        margin: 5% 70% 5% 0;
+        max-width: 20%;
+        offset-path: path('M1.00637 51.5351C0.589015 34.8792 20.6218 1 80.5575 1C140.493 1 203.409 102 266.227 102C329.046 102 352 71.1369 352 51.5351C352 31.9332 326.959 1 266.227 1C205.496 1 129.551 102 80.5575 102C31.564 102 1.42372 68.1909 1.00637 51.5351Z');
+    }
+}
+@media screen and (max-width: 768px) {
+    .rocket_image {
+        margin: 5% 70% 5% 0;
+        max-width: 20%;
+        offset-path: path('M1.0057 45.0305C0.632338 30.5185 18.5534 1 72.1711 1C125.789 1 182.072 89 238.269 89C294.465 89 315 62.1094 315 45.0305C315 27.9517 292.598 1 238.269 1C183.939 1 116 89 72.1711 89C28.3421 89 1.37905 59.5426 1.0057 45.0305Z');
+    }
+    .title_header {
+        padding-top: 3%;
+        color: white;
+        font-size: 34px;
+        line-height: 1.1;
+    }
+    .header_buttons {
+        padding-top: 8%;
+        display: grid;
+    }
+    .header_button {
+        color: #F7FFF7;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 3% 35%;
+        border-radius: 4px;
+        margin: 0.8%;
+    }
+    #mainLink {
+        background-color: #424242;
+        color: white;
+        text-decoration: none;
+    }
+    #header_button_2 {
+        background-color: #797A9E;
+        color: white;
+        text-decoration: none;
+    }
+    #header_button_3 {
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
+    .about_me {
+        display: flex;
+        padding: 16% 9%;
+    }
+    .image_me {
+        padding-bottom: 35%;
+    }
+    #title_about_me {
+        font-family: 'Fascinate Inline', sans-serif;
+        font-size: 28px;
+        color: #9893DA;
+        line-height: 1.8;
+    }
+    .text_about_me {
+        font-family: 'Inter', sans-serif;
+        color: white;
+        padding-left: 25%;
+        letter-spacing: 0.8px;
+        font-size: 14px;
+    }
+    .title_just_images {
+        color: white;
+        font-size: 28px;
+        padding-bottom: 4%;
+    }
+    .all_images {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right_just_image {
+        display: block;
+    }
+    #just_image_1 {
+        max-width: 45%;
+        height: auto;
+    }
+    #just_image_2,
+    #just_image_3 {
+        max-width: 86%;
+        height: auto;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+    .block_just_images {
+        padding: 0 0;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .reviews_from_people {
+        margin: 0 auto;
+        display: grid;
+        padding: 15% 0;
+    }
+    .reviews_card {
+        background-color: #151515;
+        border-radius: 15px;
+        font-family: 'Inter', sans-serif;
+        width: 350px;
+        margin-left: 2%;
+        margin-bottom: 3%;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
+    }
+    .human_inner_circle {
+        padding: 11%;
+        max-width: 50%;
+    }
+    .comment {
+        padding: 0 11%;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .name_human {
+        color: white;
+        font-size: 14px;
+        padding: 18% 11% 10% 11%;
+    }
+    .name_human_2 {
+        color: white;
+        font-size: 14px;
+        padding: 23% 11% 10% 11%;
+    }
+    .name_human_3 {
+        color: white;
+        font-size: 14px;
+        padding: 18% 11% 10% 11%;
+    }
+    .block_frequently_questions {
+        padding: 0 2%;
+        margin: 0 10% 0 0;
+    }
+    .title_frequently_questions {
+        color: #797A9E;
+        font-size: 28px;
+        padding: 0 0 10% 10%;
+        text-align: center;
+    }
+    .block_all_text_frequently_questions {
+        display: grid;
+    }
+    .text_frequently_questions_1 {
+        color: white;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+        width: 270px;
+        margin-left: 14%;
+        margin-bottom: 8%;
+    }
+    #title_of_text_fq {
+        color: #BBBDF6;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .text_frequently_questions_2 {
+        color: white;
+        margin-left: 14%;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        width: 270px;
+        margin-bottom: 8%;
+    }
+    .text_frequently_questions_3 {
+        color: white;
+        margin-left: 14%;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        width: 270px;
+    }
+    .bottom {
+        text-align: center;
+        padding: 20% 4% 0 4%;
+    }
+    .text_bottom {
+        color: #BBBDF6;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+    .button_contact_me {
+        color: white;
+        background-color: #7D7D7D;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        padding: 3% 9%;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+    .social_circles {
+        display: flex;
+        padding: 10% 0;
+        justify-content: center;
+    }
+    .background_circle_telegram {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+        transition: 0.4s;
+    }
+    .background_circle_telegram:hover {
+        background-color: #00A3FF;
+    }
+    .background_circle_vk {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+        transition: 0.4s;
+    }
+    .background_circle_vk:hover {
+        background-color: #000AFF;
+    }
+    .background_circle_discord {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+        transition: 0.4s;
+    }
+    .background_circle_discord:hover {
+        background-color: #7B00F6;
+    }
+    .telegram_logo {
+        margin-right: 5%;
+    }
+    .discord_logo {
+        margin-right: 1.5%;
+    }
 }
