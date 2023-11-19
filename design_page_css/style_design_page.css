@@ -277,14 +277,79 @@ body {
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1010px){
     .rocket_image {
-        margin: 5% 70% 5% 0;
-        max-width: 20%;
+        margin: 5% 24% 5% 0;
+        max-width: 15%;
         offset-path: path('M1.00637 51.5351C0.589015 34.8792 20.6218 1 80.5575 1C140.493 1 203.409 102 266.227 102C329.046 102 352 71.1369 352 51.5351C352 31.9332 326.959 1 266.227 1C205.496 1 129.551 102 80.5575 102C31.564 102 1.42372 68.1909 1.00637 51.5351Z');
+    }
+    .title_header {
+        padding-top: 3%;
+        color: white;
+        font-size: 50px;
+        line-height: 1.1;
+    }
+    .image_me {
+        padding-bottom: 35%;
+    }
+    #title_about_me {
+        font-family: 'Fascinate Inline', sans-serif;
+        font-size: 28px;
+        color: #9893DA;
+        line-height: 1.8;
+    }
+    .about_me {
+        display: flex;
+        padding: 16% 8% 5% 8%;
+    }
+    .text_about_me {
+        font-family: 'Inter', sans-serif;
+        color: white;
+        letter-spacing: 0.8px;
+        padding-left: 40%;
+        padding-right: 5%;
+        font-size: 18px;
+    }
+    .all_images {
+        display: flex;
+    }
+    .right_just_image {
+        display: block;
+    }
+    #just_image_1 {
+        max-width: 48%;
+        height: auto;
+    }
+    #just_image_2,
+    #just_image_3 {
+        max-width: 97%;
+        height: auto;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+    .block_just_images {
+        padding: 0 8%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .reviews_from_people {
+        padding: 15% 8%;
+        display: flex;
+    }
+    .block_frequently_questions {
+        padding: 0 8%;
+    }
+    .bottom {
+        text-align: center;
+        padding: 13% 8% 0 8%;
+    }
+    .text_bottom {
+        color: #BBBDF6;
+        font-size: 38px;
+        margin-bottom: 5%;
     }
 }
 @media screen and (max-width: 768px) {
     .rocket_image {
-        margin: 5% 70% 5% 0;
+        margin: 5% 67% 5% 0;
         max-width: 20%;
         offset-path: path('M1.0057 45.0305C0.632338 30.5185 18.5534 1 72.1711 1C125.789 1 182.072 89 238.269 89C294.465 89 315 62.1094 315 45.0305C315 27.9517 292.598 1 238.269 1C183.939 1 116 89 72.1711 89C28.3421 89 1.37905 59.5426 1.0057 45.0305Z');
     }
@@ -350,8 +415,7 @@ body {
     }
     .all_images {
         display: flex;
-        margin: 0 auto;
-        text-align: center;
+        margin-left: 7%;
     }
     .right_just_image {
         display: block;
@@ -382,7 +446,8 @@ body {
         border-radius: 15px;
         font-family: 'Inter', sans-serif;
         width: 350px;
-        margin-left: 2%;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 3%;
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
     }
