@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="dropdown" id="myDropdown">
+    <img class="menu-icon" src="contact_me_images/Group%208.svg" onclick="toggleDropdown()"></img>
+    <div class="dropdown-content">
+        <a href="main_page.html">Main</a>
+        <a href="telegram_bot_page.html">Telegram bot</a>
+        <a href="web-design_page.html">Web-design</a>
+        <a href="design_page.html">Design</a>
+    </div>
+</div>
 <div class="all_inputs">
     <form action="https://formspree.io/f/xknlajvj" method="POST" onsubmit="return clearFields()">
         <div class="title">Contact me</div>
@@ -76,6 +85,27 @@
         }, 2000);
         return true;
     }
+
+    function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("active");
+
+        var menuIcon = document.querySelector(".menu-icon");
+        if (menuIcon.getAttribute("src") === "contact_me_images/Group%208.svg") {
+            menuIcon.setAttribute("src", "contact_me_images/Union.svg");
+        } else {
+            menuIcon.setAttribute("src", "contact_me_images/Group%208.svg");
+        }
+    }
+
+    window.addEventListener('click', function(e) {
+        var dropdown = document.getElementById("myDropdown");
+        var menuIcon = document.querySelector(".menu-icon");
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove("active");
+            menuIcon.setAttribute("src", "contact_me_images/Group%208.svg");
+        }
+    });
 </script>
 </body>
 </html>
