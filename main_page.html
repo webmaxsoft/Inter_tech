@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>main_page</title>
     <link rel="stylesheet" href="main_page_css/style_main_page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
 </div>
 <img class="union" src="main_page_images/Union.svg">
 <div class="title_after_header">
-    <img src="main_page_images/im_inner_circle.svg">
+    <img class="image_me" src="main_page_images/im_inner_circle.svg">
     <div class="text_title_after_header">Unleash Your Digital<br> Dreams</div>
     <a class="button_in_github" href="https://github.com/webmaxsoft/Inter_tech">Explore My Work</a>
 </div>
@@ -91,12 +92,16 @@
     });
 
     function handleScroll() {
-        const scrollTop = window.scrollY;
-        const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        const translateValue = 100 - scrollPercent;
-        document.querySelector('.union_2').style.transform = `translateX(${translateValue}%)`;
+        if (window.innerWidth > 1000) {
+            const scrollTop = window.scrollY;
+            const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            const translateValue = 100 - scrollPercent;
+            document.querySelector('.union_2').style.transform = `translateX(${translateValue}%)`;
+        }
     }
+
     window.addEventListener('scroll', handleScroll);
+
 
     function redirect(url) {
         window.location.href = url;

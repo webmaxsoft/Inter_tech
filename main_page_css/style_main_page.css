@@ -39,7 +39,6 @@ body {
         opacity: 1;
     }
 }
-
 .button_in_github {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
@@ -49,11 +48,11 @@ body {
     color: black;
     text-decoration: none;
 }
-#first_anchor_link {
-    padding: 4% 0;
-}
 .about_me {
     padding: 6% 20% 0 20%;
+}
+#first_anchor_link {
+    padding: 4% 0;
 }
 .union_2 {
     float: right;
@@ -250,4 +249,258 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+    .header_buttons {
+        text-align: center;
+        margin-top: 2%;
+    }
+    .header_button {
+        margin: 5% 10% 0 10%;
+        font-size: 12px;
+        color: black;
+        text-decoration: none;
+    }
+    .union {
+        margin: 5% 0 0 48%;
+        max-width: 20%;
+    }
+    .image_me {
+        max-width: 38%;
+    }
+    .title_after_header {
+        padding: 0 8%;
+    }
+    .text_title_after_header {
+        font-size: 32px;
+        padding: 3% 15% 4% 0;
+        opacity: 0;
+        white-space: nowrap;
+        animation: fadeInText 3s ease forwards;
+    }
+    @keyframes fadeInText {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .button_in_github {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        background-color: white;
+        padding: 1.2% 2.2%;
+        border-radius: 9px;
+        color: black;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    .about_me {
+        padding: 6% 8% 0 8%;
+    }
+    #first_anchor_link {
+        padding: 4% 0;
+    }
+    .union_2 {
+        float: right;
+        max-width: 50%;
+        transform: translateX(0); /* Начальное положение справа за пределами экрана */
+        transition: transform 0.2s; /* Время анимации */
+    }
+    #title_about_me {
+        font-size: 28px;
+        line-height: 2;
+        font-family: 'Orelega One', serif;
+        font-weight: normal;
+    }
+    .text_about_me_1 {
+        padding-right: 32%;
+        font-size: 15px;
+        line-height: 1.4;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        padding-bottom: 6%;
+    }
+    .text_about_me_2 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        padding-right: 32%;
+        font-weight: bold;
+        line-height: 1.4;
+        padding-bottom: 6%;
+    }
+    .text_about_me_3 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+    .block_cards {
+        padding: 23% 0 0 0;
+        text-align: center;
+    }
+    .title_block_cards {
+        font-size: 28px;
+    }
+    .all_cards {
+        margin-top: 15%;
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+
+        font-weight: 500;
+        margin-bottom: 15%;
+    }
+    .cards_template {
+        height: 380px;
+        width: 300px;
+        background-color: white;
+        border-radius: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5%;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.27);
+    }
+    .cards_template:hover .telegram_image {
+        transform: translateY(-25%);
+    }
+    .background_images_cards {
+        background-color: #C37740;
+        width: 300px;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    .telegram_image {
+        transition: 0.4s;
+    }
+    .title_crads {
+        font-size: 24px;
+        padding: 4% 0;
+    }
+    .text_cards {
+        padding: 0 6% 12% 6%;
+    }
+    .button_telegram {
+        color: black;
+        background-color: white;
+        border: 3px solid #C37740;
+        border-radius: 10px;
+        padding: 1% 8%;
+        transition: 0.2s;
+        text-decoration: none;
+    }
+    .button_telegram:hover {
+        background-color: #C37740;
+        font-size: 19px;
+    }
+    .button_design {
+        color: black;
+        background-color: white;
+        border: 3px solid #C37740;
+        border-radius: 10px;
+        padding: 1% 8%;
+        transition: 0.2s;
+        text-decoration: none;
+    }
+    .button_design:hover {
+        background-color: #C37740;
+        font-size: 19px;
+    }
+    .button_web_design {
+        color: black;
+        background-color: white;
+        border: 3px solid #C37740;
+        border-radius: 10px;
+        padding: 1% 8%;
+        transition: 0.2s;
+        text-decoration: none;
+    }
+    .button_web_design:hover {
+        background-color: #C37740;
+        font-size: 19px;
+    }
+    .block_contact_me {
+        padding: 0 11%;
+    }
+    .title_contact_me {
+        font-size: 28px;
+    }
+    .text_contact_me {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        padding: 5% 0 10% 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .block_buttons_hrefs {
+        padding: 1% 11% 0 11%;
+        display: flex;
+    }
+    .background_circle_telegram {
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        transition: 0.4s;
+    }
+    .background_circle_telegram:hover {
+        background-color: #00A3FF;
+    }
+    .background_circle_vk {
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 2%;
+        transition: 0.4s;
+    }
+    .background_circle_vk:hover {
+        background-color: #000AFF;
+    }
+    .background_circle_discord {
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 2%;
+        transition: 0.4s;
+    }
+    .background_circle_discord:hover {
+        background-color: #7B00F6;
+    }
+    .telegram_logo {
+        margin: 28% 0 0 21%;
+    }
+    .vk_logo {
+        margin: 33% 0 0 22%;
+    }
+    .discord_logo {
+        margin: 28% 0 0 19%;
+    }
+    .contact_me_button {
+        color: black;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        background-color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 10px;
+        padding: 3% 2%;
+        margin: 0 0 0 4%;
+        transition: 0.4s;
+    }
+    .contact_me_button:hover {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        margin: 0.5% 5% 0.9% 5%;
+    }
+    .blend_group {
+        display: block;
+        max-width: 78%;
+        margin-top: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
