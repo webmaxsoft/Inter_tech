@@ -250,6 +250,26 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (min-device-width: 768px) and (max-device-width: 1188px){
+    .block_cards {
+        padding: 11% 17% 0 17%;
+        text-align: center;
+    }
+    .all_cards {
+        margin-top: 15%;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+    .blend_group {
+        display: block;
+        max-width: 92%;
+        margin-top: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (max-width: 768px) {
     .header_buttons {
         text-align: center;
@@ -305,8 +325,8 @@ body {
     .union_2 {
         float: right;
         max-width: 50%;
-        transform: translateX(0); /* Начальное положение справа за пределами экрана */
-        transition: transform 0.2s; /* Время анимации */
+        transform: translateX(0);
+        transition: transform 0.2s;
     }
     #title_about_me {
         font-size: 28px;
